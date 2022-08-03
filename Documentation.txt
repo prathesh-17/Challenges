@@ -1,0 +1,28 @@
+Question 1:
+
+<close> - <open> gives you the gain
+dividing it by <open> and multiplying it by 100 gives you the percentage gain
+
+
+Question 2:
+
+create a procedure with two inputs start date (YYYY MM DD) and start time(HH MM SS)
+merge two inputs and cast it to datetime
+add 5 hours to the datetime 
+find the rows between this time interval
+then calculate the sum(trade_size*trade_price)/sum(trade_price) grouping it by ticker name
+
+
+Question 3:
+
+PriceDiff Table: select a table which has first trade of the day and its opening price
+select another table which has last trade of the day and its closing price
+then join these two tables and get the absolute difference between the extracted values
+then sort the table by price range in descending order and pick the top 3 dates.
+
+High Table: select a table with maximum price value for each date
+join the table with itself to find the timee at which the max price was reached
+
+Then join the pricediff and high table with matching Dates.
+
+ 

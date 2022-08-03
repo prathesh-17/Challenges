@@ -1,6 +1,6 @@
 
 use challenges;
-drop procedure if exits question3
+drop procedure if exists question3;
 delimiter //
 create procedure question3()
 begin
@@ -36,7 +36,7 @@ begin
 
 			join 
 
-			(select Date,time,high from sample_dataset3) as a2
+			(select Date, time, high from sample_dataset3) as a2
 
 			on a1.date = a2.date and a1.maxHigh = a2.high;
 

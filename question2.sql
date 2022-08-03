@@ -19,6 +19,6 @@ begin
 end//
 delimiter ;
 
-call vwap('2010-10-11','09:00:00')
+call vwap('2010-10-11','09:00:00');
 
 
